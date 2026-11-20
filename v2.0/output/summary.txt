@@ -1,0 +1,46 @@
+ENDO_AI v2.0 - perfect-foresight equilibrium
+
+Convergence (scenarios): max Euler gap [8.2e-08 2.6e-08 5.8e-07] ; max change of lab policy in last outer step [0.0006 0.0025 0.006 ]
+
+Scenario results (v2.0 | v1.0 in brackets):
+Bottleneck:
+  GDP growth 2030 / 2040 / 2050: 2.5% / 2.3% / 2.2%   [v1: 2.5% / 2.5% / 2.7%]
+  average growth 2025-2050: 2.3%  [v1: 2.6%]
+  interest rate 2030 / 2040 / 2050: 6.4% / 6.0% / 5.8%
+  saving rate 2025 / 2035 / 2050: 24.9% / 24.2% / 23.8%
+  AI investment, peak share of GDP to 2075: 0.02% in 2030
+  lab R&D share 2025 / 2035 / 2050: 2% / 2% / 2%
+  tasks automated 2050: 0%   wage index 2050: 1.63   labour share 2050: 66%
+Transformative:
+  GDP growth 2030 / 2040 / 2050: 2.4% / 2.2% / 4.3%   [v1: 2.7% / 5.1% / 13.5%]
+  average growth 2025-2050: 2.6%  [v1: 5.5%]
+  interest rate 2030 / 2040 / 2050: 6.6% / 6.9% / 9.7%
+  saving rate 2025 / 2035 / 2050: 23.8% / 21.1% / 14.7%
+  AI investment, peak share of GDP to 2075: 0.12% in 2051
+  lab R&D share 2025 / 2035 / 2050: 2% / 29% / 33%
+  tasks automated 2050: 9%   wage index 2050: 1.75   labour share 2050: 66%
+Explosive:
+  GDP growth 2030 / 2040 / 2050: 1.6% / 57.6% / 146.4%   [v1: 4.3% / 66.8% / 165.0%]
+  average growth 2025-2050: 51.1%  [v1: 57.3%]
+  interest rate 2030 / 2040 / 2050: 8.9% / 148.8% / 819.9%
+  saving rate 2025 / 2035 / 2050: 14.8% / 4.3% / 0.0%
+  AI investment, peak share of GDP to 2075: 4.33% in 2035
+  lab R&D share 2025 / 2035 / 2050: 70% / 32% / 10%
+  tasks automated 2050: 97%   wage index 2050: 1.45e+05   labour share 2050: 29%
+
+Monte Carlo: 100 draws, 98 converged (Euler gap < 1e-4, lab policy change < 0.05)
+Average growth 2025-2050, percentiles 5/25/50/75/95 (%): [2.1, 2.2, 2.5, 3.3, 6.2]
+Average growth 2050-2075, percentiles 5/25/50/75/95 (%): [2.1, 2.5, 5.5, 14.8, 50.2]
+Share of draws with average growth > 10% in 2025-2050: 0.031
+Average AI investment 2025-2030, percentiles 5/50/95 (% of GDP): [0.0, 0.02, 0.87]
+Spearman correlation of early AI investment with later growth: 0.67
+
+parameter       2025-50    2050-75
+kappa_mid         -0.27      -0.37
+eps               +0.57      +0.80
+r_S               +0.12      +0.23
+tau               -0.21      -0.17
+g_P               +0.00      +0.03
+beta_max          +0.02      +0.08
+theta             -0.47      -0.06
+mu                -0.09      -0.06
