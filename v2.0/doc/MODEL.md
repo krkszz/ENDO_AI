@@ -617,7 +617,7 @@ Spearman rank correlation of each parameter with average growth:
 ```bash
 cd v2.0
 pip install -r requirements.txt
-python src/run_mc_v2.py 100      # Monte Carlo, ~1 h on 2 cores, writes output/mc_cache.pkl
+python src/run_mc_v2.py 100      # Monte Carlo, ~15 min on 2 cores, writes output/mc_cache.pkl
 python src/run_v2.py             # scenarios (~5 min), figures, CSVs, summary
 python src/run_v2.py --resolve   # force re-solving the scenarios instead of using the cache
 ```
