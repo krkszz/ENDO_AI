@@ -211,7 +211,7 @@ by humans, and within each group inputs are spread evenly.
 complements. If $X \to \infty$ while $\tilde\beta < 1$ stays fixed, then
 
 $$
-Z \;\to\; (1-\tilde\beta)^{1/(\varepsilon-1)} L_Y ,
+Z \quad\to\quad (1-\tilde\beta)^{1/(\varepsilon-1)} L_Y ,
 $$
 
 so output is bounded by the human-performed tasks. This is the **Baumol
