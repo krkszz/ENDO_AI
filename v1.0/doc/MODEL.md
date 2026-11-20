@@ -332,9 +332,9 @@ between physical capital and inference compute. The target share for compute
 is a softmax in returns, capped at $\bar x_H = 0.6$:
 
 $$
-x_H^{*} = \min\left(\frac{1}{1 + (r_K / r_H)^{\zeta}},\bar{x_H} \right),
-%\qquad
-%\dot x_H = \frac{x_H^{*} - x_H}{\tau_I},
+x_H^{\ast} = \min\left(\frac{1}{1 + (r_K / r_H)^{\zeta}}, \bar{x}_H\right),
+\qquad
+\dot x_H = \frac{x_H^{\ast} - x_H}{\tau_I},
 $$
 
 with $\zeta = 3$ and $\tau_I = 2$ years (investment adjustment lag).
