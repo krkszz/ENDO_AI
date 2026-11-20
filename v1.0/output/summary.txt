@@ -1,0 +1,21 @@
+ENDO_AI v1.0 - Monte Carlo summary (N = 6000 draws)
+
+Average annual GDP growth 2025-2050, percentiles 5/25/50/75/95 (%): [2.7, 3.2, 4.2, 6.5, 14.6]
+Average annual GDP growth 2050-2075, percentiles 5/25/50/75/95 (%): [4.4, 7.3, 11.8, 23.2, 59.9]
+Share of draws with average growth > 10% in 2025-2050: 0.112
+Labour share 2050, percentiles 5/50/95 (%): [55.9, 65.9, 66.0]
+
+Spearman rank correlation of parameters with average growth:
+parameter       2025-50    2050-75
+kappa_mid         -0.68      -0.37
+eps               +0.49      +0.71
+r                 +0.32      +0.22
+tau               -0.20      -0.09
+g_P               +0.26      +0.19
+beta_max          +0.13      +0.35
+m_max             +0.04      +0.02
+
+Scenario summary:
+Bottleneck      growth 2030=2.5% 2050=2.7% 2070=3.7% | automated 2050=3% | wage index 2050=1.72 | labour share 2050=66%
+Transformative  growth 2030=2.7% 2050=13.5% 2070=30.7% | automated 2050=34% | wage index 2050=3.55 | labour share 2050=66%
+Explosive       growth 2030=4.5% 2050=165.3% 2070=58.8% | automated 2050=96% | wage index 2050=1.63e+06 | labour share 2050=41%
