@@ -65,7 +65,7 @@ The standard semi-endogenous model is
 
 $$
 Y = A^{\sigma} K^{\alpha} L_Y^{1-\alpha}, \qquad
-\dot A = \theta\, L_A^{\lambda} A^{\phi}, \qquad
+\dot A = \theta\  L_A^{\lambda} A^{\phi}, \qquad
 L_Y + L_A = L .
 $$
 
@@ -130,7 +130,7 @@ $S_t H^{use}_t$. Effective compute is split between fixed uses:
 AI input is measured in **worker-equivalents**. In goods production,
 
 $$
-X_t = \frac{S_t\, u_Y\, H^{use}_t}{c},
+X_t = \frac{S_t\  u_Y\  H^{use}_t}{c},
 $$
 
 where $c$ is the compute needed to replace one worker on an automated task.
@@ -138,8 +138,8 @@ AI researchers need $c_R = 30$ times more compute per worker-equivalent,
 because research tasks are long-horizon:
 
 $$
-X_{RA} = \frac{S\, u_{RA}\, H^{use}}{c\, c_R}, \qquad
-X_{RS} = \frac{S\, u_{RS}\, H^{use}}{c\, c_R}.
+X_{RA} = \frac{S\  u_{RA}\  H^{use}}{c\  c_R}, \qquad
+X_{RS} = \frac{S\  u_{RS}\  H^{use}}{c\  c_R}.
 $$
 
 ### 3.3 AI capability and automation
@@ -156,9 +156,9 @@ with $\bar C_T$ = three years of 2025 training compute, so $\mathcal{C}_{2025}=1
 **Automatable task shares** follow logistic curves in capability:
 
 $$
-\beta(\kappa) = \frac{\beta_{\max}}{1 + \exp\!\big(-(\kappa - \bar\kappa)/w\big)},
+\beta(\kappa) = \frac{\beta_{\max}}{1 + \exp\big(-(\kappa - \bar\kappa)/w\big)},
 \qquad
-\beta_R(\kappa) = \frac{\beta_{R,\max}}{1 + \exp\!\big(-(\kappa - \bar\kappa - \Delta_R)/w_R\big)} .
+\beta_R(\kappa) = \frac{\beta_{R,\max}}{1 + \exp\big(-(\kappa - \bar\kappa - \Delta_R)/w_R\big)} .
 $$
 
 * $\bar\kappa$ (`kappa_mid`) is **capability difficulty**: how many log-units
@@ -176,13 +176,13 @@ user cost of one AI worker-equivalent and $w$ the wage
 ([Section 3.5](#35-factor-prices)). The adoption gate is
 
 $$
-G_t = \frac{1}{1 + \exp\!\big(-\gamma_G \ln(w_t/p_{X,t})\big)}, \qquad \gamma_G = 2 ,
+G_t = \frac{1}{1 + \exp\big(-\gamma_G \ln(w_t/p_{X,t})\big)}, \qquad \gamma_G = 2 ,
 $$
 
 and deployment adjusts towards the target with lag $\tau$:
 
 $$
-\dot{\tilde\beta} = \frac{\max\!\big(\beta(\kappa)\,G,\ \beta_0\big) - \tilde\beta}{\tau},
+\dot{\tilde\beta} = \frac{\max\big(\beta(\kappa)\ G,\ \beta_0\big) - \tilde\beta}{\tau},
 \qquad
 \dot{\tilde\beta}_R = \frac{\beta_R(\kappa) - \tilde\beta_R}{\tau_R}.
 $$
@@ -195,7 +195,7 @@ use their own compute.
 Output is Cobb-Douglas in physical capital and a CES **task aggregate** $Z$:
 
 $$
-Y = A\, K^{\alpha}\, Z^{1-\alpha},
+Y = A\  K^{\alpha}\  Z^{1-\alpha},
 $$
 
 $$
@@ -226,9 +226,9 @@ Let $B = \tilde\beta^{1/\varepsilon} X^{\rho} + (1-\tilde\beta)^{1/\varepsilon} 
 The marginal products are
 
 $$
-w = \frac{\partial Y}{\partial L_Y} = (1-\alpha)\,Y\,\frac{(1-\tilde\beta)^{1/\varepsilon} L_Y^{\rho-1}}{B},
+w = \frac{\partial Y}{\partial L_Y} = (1-\alpha)\ Y\ \frac{(1-\tilde\beta)^{1/\varepsilon} L_Y^{\rho-1}}{B},
 \qquad
-MP_X = (1-\alpha)\,Y\,\frac{\tilde\beta^{1/\varepsilon} X^{\rho-1}}{B},
+MP_X = (1-\alpha)\ Y\ \frac{\tilde\beta^{1/\varepsilon} X^{\rho-1}}{B},
 \qquad
 MP_K = \alpha \frac{Y}{K}.
 $$
@@ -255,7 +255,7 @@ $$
 The **user cost of one AI worker-equivalent**, used in the adoption gate, is
 
 $$
-p_X = \big(\max(r_K, 0.01) + \delta_H\big)\,\frac{\pi\, c}{S}.
+p_X = \big(\max(r_K, 0.01) + \delta_H\big)\ \frac{\pi\  c}{S}.
 $$
 
 ### 3.6 Research sectors
@@ -266,13 +266,13 @@ production:
 
 $$
 R_j = \Big[\tilde\beta_R^{1/\varepsilon} X_{Rj}^{\rho} + (1-\tilde\beta_R)^{1/\varepsilon} L_j^{\rho}\Big]^{1/\rho},
-\qquad j \in \{A, S\}.
+\qquad j \in \lbrace A, S \rbrace.
 $$
 
 **General technology (TFP):**
 
 $$
-\frac{\dot a}{a} = \theta_A\, a^{\phi_A - 1} \left(\frac{R_A}{R_{A,0}}\right)^{\lambda_A},
+\frac{\dot a}{a} = \theta_A\  a^{\phi_A - 1} \left(\frac{R_A}{R_{A,0}}\right)^{\lambda_A},
 $$
 
 with $\theta_A = 0.012$ (1.2 % TFP growth in 2025), $\lambda_A = 0.5$ and $\phi_A = 0.5$.
@@ -281,7 +281,7 @@ The implied returns to research are $r_A = \lambda_A/(1-\phi_A) = 1$.
 **AI software (algorithmic efficiency):**
 
 $$
-\frac{\dot S}{S} = \theta_S\, S^{\phi_S - 1}\left(\frac{R_S}{R_{S,0}}\right)^{\lambda_S}
+\frac{\dot S}{S} = \theta_S\  S^{\phi_S - 1}\left(\frac{R_S}{R_{S,0}}\right)^{\lambda_S}
 \left(\frac{H_{exp}}{H_{exp,0}}\right)^{\gamma}
 \left(1 - \frac{\ln S}{\ln S_{\max}}\right).
 $$
@@ -307,7 +307,7 @@ $$
 If $r > 1$ the growth rate of $S$ *rises* with $S$, which is explosive (a
 "software intelligence explosion"). If $r < 1$ it falls. With $\varepsilon < 1$
 and $\tilde\beta_R < 1$, human AI researchers $L_S$ remain a bottleneck.
-Human AI-research labour grows at $g_{LS} = 8\%$ per year until it reaches 5×
+Human AI-research labour grows at $g_{LS} = 0.08$ (8 % per year) until it reaches 5×
 its 2025 level.
 
 ### 3.7 Investment, hardware and power
@@ -323,7 +323,7 @@ I_{lab} = m_t Y_t, \qquad
 m_t = m_0 + \frac{m_{\max} - m_0}{1 + \exp(-(t - t_m)/w_m)},
 $$
 
-with $m_0 = 0.4\%$ (about \$400 bn in 2025), $t_m = 2032$ and $w_m = 3$.
+with $m_0 = 0.004$ (0.4 % of GDP, about USD 400 bn in 2025), $t_m = 2032$ and $w_m = 3$.
 This spending is driven by expectations of future capability, which a myopic
 return rule cannot capture. Version 2 will derive it.
 
@@ -332,7 +332,7 @@ between physical capital and inference compute. The target share for compute
 is a softmax in returns, capped at $\bar x_H = 0.6$:
 
 $$
-x_H^{*} = \min\!\left(\frac{1}{1 + (r_K / r_H)^{\zeta}},\ \bar x_H\right),
+x_H^{*} = \min\left(\frac{1}{1 + (r_K / r_H)^{\zeta}},\ \bar x_H\right),
 \qquad
 \dot x_H = \frac{x_H^{*} - x_H}{\tau_I},
 $$
@@ -351,20 +351,20 @@ $$
 year (grid connections, generation, permitting):
 
 $$
-P^{\max}_{t+\Delta t} = (1-\delta_P\Delta t)\,P_t\, e^{g_P \Delta t}.
+P^{\max}_{t+\Delta t} = (1-\delta_P\Delta t)\ P_t\  e^{g_P \Delta t}.
 $$
 
 If $P^{need} > P^{\max}$, chip purchases are reduced to what can be powered,
 and the unspent money flows into physical capital. Investment in power is
-$I_P = p_P\,\max(P_{t+\Delta t} - (1-\delta_P\Delta t)P_t,\,0)/\Delta t$.
-Investment in chips is $I_{chip} = \Delta H / (Q\,\Delta t)$, and
+$I_P = p_P\ \max(P_{t+\Delta t} - (1-\delta_P\Delta t)P_t,\ 0)/\Delta t$.
+Investment in chips is $I_{chip} = \Delta H / (Q\ \Delta t)$, and
 $I_K = sY - I_{chip} - I_P$.
 
 **Hardware price-performance** improves through an exogenous trend plus
 learning-by-doing (Wright's law) on cumulative chip spending $\mathcal{I}$:
 
 $$
-\frac{\dot Q}{Q} = g_Q + b\,\frac{I_{chip}}{\mathcal{I}}, \qquad \dot{\mathcal{I}} = I_{chip},
+\frac{\dot Q}{Q} = g_Q + b\ \frac{I_{chip}}{\mathcal{I}}, \qquad \dot{\mathcal{I}} = I_{chip},
 $$
 
 with $g_Q = 0.25$ (FLOP/s per $ doubles about every 2.8 years) and $b = 0.1$.
@@ -380,12 +380,12 @@ $$
 ### 3.8 Capital, population and labour
 
 $$
-\dot K = \min\!\Big(I_K - \delta_K K,\ \ g_K^{\max} K\Big),
+\dot K = \min\Big(I_K - \delta_K K,\ \ g_K^{\max} K\Big),
 $$
 
 with $g_K^{\max} = 0.30$, a construction limit on how fast physical capital can
-grow. Population grows at $n = 0.4\%$. Labour is split between goods
-production $L_Y$, general research $L_A = 0.015\,L$ and AI-software research
+grow. Population grows at $n = 0.004$ (0.4 % per year). Labour is split between goods
+production $L_Y$, general research $L_A = 0.015\ L$ and AI-software research
 $L_S$.
 
 ---
@@ -405,11 +405,11 @@ $L_S$.
 
 ## 5. Calibration and initial conditions
 
-* **Units.** World GDP in 2025 is $Y_0 = 100$ (roughly \$ trillion). $L_0 = 1$, $K_0 = 3Y_0$.
-* **Initial automation.** $\tilde\beta_0 = \tilde\beta_{R,0} = 0.3\%$ of tasks.
+* **Units.** World GDP in 2025 is $Y_0 = 100$ (roughly USD trillion). $L_0 = 1$, $K_0 = 3Y_0$.
+* **Initial automation.** $\tilde\beta_0 = \tilde\beta_{R,0} = 0.003$ (0.3 % of tasks).
 * **AI input in 2025.** $X_0 = \beta_0 L_{Y,0}$: AI works its automated tasks at the
   same intensity as humans work theirs. This pins down $c = u_Y H_0 / X_0$.
-* **Hardware.** The 2025 AI hardware stock is worth $V_{H0} = \$1$ trillion, so
+* **Hardware.** The 2025 AI hardware stock is worth $V_{H0} = 1$ (USD 1 trillion), so
   $Q_0 = H_0 / V_{H0}$. Power and datacentre cost is $0.5\times$ chip cost per
   FLOP/s in 2025, and 2025 power capacity can run $2\times H_0$.
 * **TFP level.** $A_0$ is chosen so that $Y_0 = 100$.
@@ -444,7 +444,7 @@ Empirical anchors (all approximate):
 | $\Delta_R$ | `kappaR_extra` | 3 | Extra difficulty for research tasks |
 | $\tau$, $\tau_R$ | `tau`, `tau_R` | 8, 3 | Adoption lags (years) |
 | $\gamma_G$ | `gate_slope` | 2 | Sharpness of cost gate |
-| $V_{H0}$ | `V_H0` | 1.0 | 2025 AI hardware value (\$T) |
+| $V_{H0}$ | `V_H0` | 1.0 | 2025 AI hardware value (USD trillion) |
 | $\delta_H$ | `delta_H` | 0.20 | Hardware depreciation |
 | $g_Q$ | `g_Q` | 0.25 | Exogenous price-performance growth |
 | $b$ | `wright_b` | 0.10 | Learning-by-doing elasticity |
